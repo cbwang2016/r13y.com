@@ -1,2 +1,2 @@
 language: nix
-script: ./check.sh nixpkgs:stdenv.__bootPackages.stdenv.__bootPackages.stdenv.__bootPackages.stdenv.__bootPackages.stdenv.__bootPackages.binutils report-trivial
+script: ./check.sh nixos:nixos.iso_minimal.x86_64-linux report-iso_minimal
