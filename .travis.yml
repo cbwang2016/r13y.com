@@ -1,0 +1,2 @@
+language: nix
+script: ./check.sh nixpkgs:stdenv.__bootPackages.stdenv.__bootPackages.stdenv.__bootPackages.stdenv.__bootPackages.stdenv.__bootPackages.binutils report-trivial
