@@ -1,2 +1,4 @@
 language: nix
-script: travis_wait 90 ./check.sh nixos:nixos.iso_minimal.x86_64-linux report-iso_minimal
+script: 
+  - echo "experimental-features = nix-command flakes" > ./nix.xonf
+  - NIX_USER_CONF_FILES=./nix.conf travis_wait 9000 ./check.sh nixos:nixos.iso_minimal.x86_64-linux report-iso_minimal
